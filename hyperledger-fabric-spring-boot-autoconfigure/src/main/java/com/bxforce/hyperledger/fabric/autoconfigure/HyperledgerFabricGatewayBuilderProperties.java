@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.nio.file.Path;
 
-@ConfigurationProperties("hyperledger-fabric.ca-client")
+@ConfigurationProperties("hyperledger-fabric.gateway")
 public class HyperledgerFabricGatewayBuilderProperties {
     private boolean discovery;
     private Path networkConfig;
