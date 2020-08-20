@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/hyperledger-fabric-spring-boot.iml" filepath="$PROJECT_DIR$/.idea/hyperledger-fabric-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperledger-fabric-spring-boot-autoconfigure/hyperledger-fabric-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/hyperledger-fabric-spring-boot-autoconfigure/hyperledger-fabric-spring-boot-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hyperledger-fabric-spring-boot-starter/hyperledger-fabric-spring-boot-starter.iml" filepath="$PROJECT_DIR$/hyperledger-fabric-spring-boot-starter/hyperledger-fabric-spring-boot-starter.iml" />
+    </modules>
+  </component>
+</project>
