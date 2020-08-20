@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import java.io.IOException;
 import java.util.Properties;
 
-@EnableConfigurationProperties(HyperledgerFabricCAClientProperties.class)
+@EnableConfigurationProperties({HyperledgerFabricCAClientProperties.class, HyperledgerFabricGatewayBuilderProperties.class})
 @Configuration
 public class HyperledgerFabricAutoConfiguration {
     @Autowired
