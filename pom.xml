@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bxforce</groupId>
+    <artifactId>hyperledger-fabric-spring-boot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>hyperledger-fabric-spring-boot</name>
+
+    <modules>
+        <module>hyperledger-fabric-spring-boot-autoconfigure</module>
+        <module>hyperledger-fabric-spring-boot-starter</module>
+    </modules>
+
+    <properties>
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <fabric-gateway-java.version>2.2.0</fabric-gateway-java.version>
+        <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
+    </properties>
+</project>
