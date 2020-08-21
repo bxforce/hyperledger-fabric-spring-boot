@@ -7,7 +7,7 @@ public class HyperledgerFabricCAClientProperties {
     private String name;
     private String url;
     private String pemFile;
-    private boolean allowAllHostNames;
+    private boolean allowAllHostNames = true;
 
     public String getName() {
         return name;

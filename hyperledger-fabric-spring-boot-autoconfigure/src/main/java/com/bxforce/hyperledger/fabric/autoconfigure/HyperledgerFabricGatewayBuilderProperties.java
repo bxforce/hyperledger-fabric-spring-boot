@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 @ConfigurationProperties("hyperledger-fabric.gateway")
 public class HyperledgerFabricGatewayBuilderProperties {
-    private boolean discovery;
+    private boolean discovery = true;
     private Path networkConfig;
 
     public boolean isDiscovery() {

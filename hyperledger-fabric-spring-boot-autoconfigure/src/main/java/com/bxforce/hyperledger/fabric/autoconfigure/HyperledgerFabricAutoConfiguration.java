@@ -5,6 +5,7 @@ import org.hyperledger.fabric.gateway.Network;
 import org.hyperledger.fabric.sdk.security.CryptoSuite;
 import org.hyperledger.fabric_ca.sdk.HFCAClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,17 +23,18 @@ public class HyperledgerFabricAutoConfiguration {
     private HyperledgerFabricGatewayBuilderProperties hyperledgerFabricGatewayBuilderProperties;
 
     @Bean
+    @ConditionalOnProperty(prefix = "hyperledger-fabric.ca-client", name = {"name", "url", "pemFile", "allowAllHostNames"})
     public HFCAClient HFCAClientFactory() throws Exception {
-        Properties props = new Properties();
+        Properties properties = new Properties();
 
-        props.setProperty("pemFile", hyperledgerFabricCAClientProperties.getPemFile());
-        props.put("allowAllHostNames", hyperledgerFabricCAClientProperties.isAllowAllHostNames());
+        properties.setProperty("pemFile", hyperledgerFabricCAClientProperties.getPemFile());
+        properties.put("allowAllHostNames", hyperledgerFabricCAClientProperties.isAllowAllHostNames());
 
         CryptoSuite cryptoSuite = CryptoSuite.Factory.getCryptoSuite();
         HFCAClient caClient = HFCAClient.createNewInstance(
                 hyperledgerFabricCAClientProperties.getName(),
                 hyperledgerFabricCAClientProperties.getUrl(),
-                props
+                properties
         );
         caClient.setCryptoSuite(cryptoSuite);
 
@@ -40,7 +42,8 @@ public class HyperledgerFabricAutoConfiguration {
     }
 
     @Bean
-    public Gateway.Builder builderFactory() throws IOException {
+    @ConditionalOnProperty(prefix = "hyperledger-fabric.gateway", name = {"discovery", "networkConfig"})
+    public Gateway.Builder gatewayBuilderFactory() throws IOException {
         Gateway.Builder builder = Gateway.createBuilder();
 
         builder
