@@ -1,7 +1,6 @@
 package com.bxforce.hyperledger.fabric.autoconfigure;
 
 import org.hyperledger.fabric.gateway.Gateway;
-import org.hyperledger.fabric.gateway.Network;
 import org.hyperledger.fabric.sdk.security.CryptoSuite;
 import org.hyperledger.fabric_ca.sdk.HFCAClient;
 import org.springframework.beans.factory.annotation.Autowired;
