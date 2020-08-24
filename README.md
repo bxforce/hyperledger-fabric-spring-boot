@@ -10,7 +10,7 @@ To use the Hyperledger Fabric Spring Boot Starter in your projects you can inclu
 ```xml
 <dependency>
   <groupId>com.github.bxforce</groupId>
-  <artifactId>hyperledger-fabric-spring-boot</artifactId>
+  <artifactId>hyperledger-fabric-spring-boot-starter</artifactId>
   <version>1.0.0-RELEASE</version>
   <type>pom</type>
 </dependency>
