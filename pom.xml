@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.bxforce</groupId>
     <artifactId>hyperledger-fabric-spring-boot</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>hyperledger-fabric-spring-boot</name>
