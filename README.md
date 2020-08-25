@@ -24,14 +24,14 @@ To use the Hyperledger Fabric Spring Boot Starter in your projects you can inclu
 The Certificate Authority name.
 + **hyperledger-fabric.ca-client.url**
 Http URL for the Fabric's certificate authority services endpoint.
-+ **hyperledger-fabric.ca-client.pem-file**
++ **hyperledger-fabric.ca-client.pemFile**
 File location for x509 pem certificate for SSL.
-+ **hyperledger-fabric.ca-client.allow-all-host-names**
++ **hyperledger-fabric.ca-client.allowAllHostNames**
 boolen(true/false) override certificates CN Host matching -- for development only.
 
 #### Hyperledger Fabric Gateway Configuration
 
 + **hyperledger-fabric.gateway.discovery**
 Enable or disable service discovery for all transaction submissions for this gateway.
-+ **hyperledger-fabric.gateway.network-config**
++ **hyperledger-fabric.gateway.networkConfig**
 The path to the common connection profile.
