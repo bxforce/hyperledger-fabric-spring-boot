@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hyperledger-fabric-spring-boot-autoconfigure</artifactId>
-    <version>1.0.1-RELEASE</version>
+    <version>1.0.2-RELEASE</version>
     <name>hyperledger-fabric-spring-boot-autoconfigure</name>
 
     <parent>
         <groupId>com.github.bxforce</groupId>
         <artifactId>hyperledger-fabric-spring-boot</artifactId>
-        <version>1.0.1-RELEASE</version>
+        <version>1.0.2-RELEASE</version>
     </parent>
 
     <dependencies>
